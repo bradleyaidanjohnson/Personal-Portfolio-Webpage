@@ -1,18 +1,115 @@
+:root {
+  --nav-background-color: rgb(41, 30, 138);
+  --nav-text-color: rgb(161, 160, 163);
+}
+
 * {
-  background-color: aliceblue;
+  padding: 0;
+  margin: 0
+}
+
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: green;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 10rem;
+}
+h2 {
+  font-size: 8rem;
+}
+h3 {
+  font-size: 6rem;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: var(--nav-background-color);
+  color: var( --nav-text-color);
+  font-family:'Courier New', Courier, monospace;
+  font-size: 4rem;
+  z-index: 4;
+  height: 120px;
+}
+
+.nav-ul {
+  display: flex;
+  margin-right: 4rem;
+  list-style: none;
+}
+
+.nav-list a {
+  display: block;
+  padding: 2rem;
+}
+.nav-list a:hover {
+  background-color: brown;
+}
+
+
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(-94deg, black, grey)
+}
+
+#welcome-section p {
+  font-size: 4rem;
+  font-weight: 500;
+  color: aqua;
+  }
+
+.projects {
+  width: 80vw;
+  text-align: center;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10rem 3rem;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 500px) {
   * {
     background-color: red;
   }
-}
-
-.welcome {
-  height: 100vh;
-}
-
-.navbar {
-  position: fixed;
-  top: 0
 }
