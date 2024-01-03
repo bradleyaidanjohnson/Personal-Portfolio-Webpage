@@ -1,0 +1,18 @@
+* {
+  background-color: aliceblue;
+}
+
+@media (max-width: 500px) {
+  * {
+    background-color: red;
+  }
+}
+
+.welcome {
+  height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  top: 0
+}
